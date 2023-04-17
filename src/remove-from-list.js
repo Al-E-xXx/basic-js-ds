@@ -27,19 +27,19 @@ function removeKFromList(l, k) {
 
   if (linkedList.value === k) {
     l = linkedList.next;
-    linkedList = linkedList.next;
+    linkedList = linkedList.next;    
   }
 
   while (linkedList) {
     if (linkedList.value === k) {
       last.next = linkedList.next;
-      linkedList = linkedList.next;
+      linkedList = linkedList.next; 
     } else {
-      last = linkedList;
-      linkedList = linkedList.next;
+      last = linkedList;   
+      linkedList = linkedList.next; 
     }
   }
-  
+
   return l;
 }
 
